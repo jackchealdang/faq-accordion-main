@@ -20,7 +20,7 @@ function toggleItem() {
     }
     if (itemClass == 'accordion-item close') {
         this.parentNode.className = 'accordion-item open';
-        this.querySelector('.icon-plus').className = 'icon-minus';
+        let icon = this.querySelector('.icon-plus');
         if (icon) {
             icon.className = 'icon-minus';
         }
