@@ -7,6 +7,9 @@
 
   --bg-desktop: url("assets/images/background-pattern-desktop.svg");
   --bg-mobile: url("assets/images/background-pattern-mobile.svg");
+
+  --icon-plus: url("assets/images/icon-plus.svg");
+  --icon-minus: url("assets/images/icon-minus.svg");
 }
 
 body {
@@ -23,6 +26,7 @@ body {
   align-items: center;
 
   background-image: var(--bg-desktop);
+  background-attachment: fixed;
 }
 
 .bg-layer{
@@ -70,6 +74,38 @@ main {
   /* border: 1px solid black; */
   width: 700px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.accordion-heading{
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close .accordion-content{
+  transform: scaleY(0);
+  height: 0;
+  float: left;
+  display: block;
+
+  transition: height 1s ease-out;
+}
+
+.open .accordion-content{
+  transform: scale(1);
+  transform-origin: top;
+
+  transition: transform 0.4s ease;
+}
+
+.icon-plus {
+  content: var(--icon-plus);
+}
+
+.icon-minus {
+  content: var(--icon-minus);
+  color: black;
 }
 
 @media screen and (max-width: 850px) {
