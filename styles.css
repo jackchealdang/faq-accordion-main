@@ -33,6 +33,7 @@ body {
   right: 0;
 
   background-image: var(--bg-desktop);
+  background-position: top left;
   background-size: cover;
   background-attachment: scroll;
 }
@@ -136,6 +137,5 @@ main {
 @media screen and (max-width: 850px) {
   body {
     background-image: var(--bg-mobile);
-    background-attachment: scroll;
   }
 }
