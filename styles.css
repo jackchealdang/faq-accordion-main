@@ -1,0 +1,79 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightpink: hsl(275, 100%, 97%);
+  --graypurp: hsl(292, 16%, 49%);
+  --darkpurp: hsl(292, 42%, 14%);
+  --font: 'Work Sans';
+
+  --bg-desktop: url("assets/images/background-pattern-desktop.svg");
+  --bg-mobile: url("assets/images/background-pattern-mobile.svg");
+}
+
+body {
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 1.25em;
+  font-family: var(--font);
+
+  box-sizing: border-box;
+  min-height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: var(--bg-desktop);
+}
+
+.bg-layer{
+  position: fixed;
+  width: 100%;
+  height: 75%;
+  box-sizing: border-box;
+  left:0;
+  bottom: 0;
+  background-color: var(--lightpink);
+  z-index: -1;
+}
+
+h1 {
+  font-size: 2.5em; 
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.icon-star {
+  display: flex;
+  align-items: center;
+  margin-right: 0.4em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1.75em;
+  border-radius: 16px;
+  /* border: 1px solid black; */
+  width: 700px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    background-image: var(--bg-mobile);
+  }
+}
