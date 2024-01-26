@@ -3,6 +3,7 @@
   --lightpink: hsl(275, 100%, 97%);
   --graypurp: hsl(292, 16%, 49%);
   --darkpurp: hsl(292, 42%, 14%);
+  --purp: #AD28EB;
   --font: 'Work Sans';
 
   --bg-desktop: url("assets/images/background-pattern-desktop.svg");
@@ -50,6 +51,7 @@ h2 {
 
 p {
   font-size: 1em;
+  color: var(--graypurp);
 }
 
 .icon-star {
@@ -86,7 +88,7 @@ main {
 }
 
 .accordion-heading :hover{
-  color: var(--graypurp);
+  color: var(--purp);
 }
 
 .close .accordion-content{
