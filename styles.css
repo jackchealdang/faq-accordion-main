@@ -20,13 +20,15 @@ body {
   font-family: var(--font);
 
   box-sizing: border-box;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100vh;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   background-image: var(--bg-desktop);
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -119,5 +121,6 @@ main {
 @media screen and (max-width: 850px) {
   body {
     background-image: var(--bg-mobile);
+    background-attachment: scroll;
   }
 }
