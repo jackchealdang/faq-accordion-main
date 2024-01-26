@@ -100,10 +100,12 @@ main {
   align-items: center;
 
   color: black;
+  transition: color 0.3s ease-in, translate 0.3s;
 }
 
-.accordion-heading :hover{
+.accordion-heading:hover{
   color: var(--purp);
+  translate: -5px;
 }
 
 .close .accordion-content{

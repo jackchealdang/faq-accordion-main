@@ -4,7 +4,7 @@ console.log(accHd);
 
 for(i = 0; i < accHd.length; i++) {
     accHd[i].addEventListener('click', toggleItem, false);
-    // console.log('test');
+// console.log('test');
 }
 
 function toggleItem() {
