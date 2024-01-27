@@ -36,6 +36,9 @@ body {
   background-position: top left;
   background-size: cover;
   background-attachment: scroll;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 .bg-layer{
