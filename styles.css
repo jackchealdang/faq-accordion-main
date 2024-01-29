@@ -56,6 +56,7 @@ body {
 h1 {
   font-size: 3.0em; 
   margin: 0.3em 0 0.4em;
+  color: var(--darkpurp);
 }
 
 h2 {
@@ -113,7 +114,7 @@ main {
   justify-content: space-between;
   align-items: center;
 
-  color: black;
+  color: var(--darkpurp);
   transition: color 0.3s ease-in, translate 0.3s;
 }
 
