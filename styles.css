@@ -52,7 +52,7 @@ body {
 }
 
 h1 {
-  font-size: 3.0em; 
+  font-size: 3.7em; 
   margin: 0.3em 0 0.4em;
   color: var(--darkpurp);
 }
@@ -132,21 +132,16 @@ main {
 }
 
 .close .accordion-content{
-  transform: scaleY(0);
-  height: 0;
-  float: left;
-  display: block;
+  max-height: 0;
+  overflow: hidden;
 
-  transition: height 1s ease-out;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .open .accordion-content{
-  margin-bottom: 30px;
-
-  transform: scale(1);
-  transform-origin: top;
-
-  transition: transform 0.4s ease;
+  max-height: 150px;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .icon-plus {
