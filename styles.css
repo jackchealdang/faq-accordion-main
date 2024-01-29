@@ -109,6 +109,10 @@ main {
   /* overflow-y: scroll; */
 }
 
+.card-title {
+  display: flex;
+}
+
 .accordion-heading{
   cursor: pointer;
   display: flex;
@@ -116,10 +120,13 @@ main {
   align-items: center;
 
   color: var(--darkpurp);
-  transition: color 0.3s ease-in, translate 0.3s;
 }
 
-.accordion-heading:hover{
+.accordion-heading h2{
+  transition: color 0.3s ease, translate 0.3s ease;
+}
+
+.accordion-heading:hover h2{
   color: var(--purp);
   translate: -5px;
 }
