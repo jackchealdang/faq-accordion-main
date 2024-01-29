@@ -45,7 +45,7 @@ body {
 .bg-layer{
   position: fixed;
   width: 100%;
-  height: 75%;
+  height: 66%;
   box-sizing: border-box;
   left:0;
   bottom: 0;
@@ -54,7 +54,8 @@ body {
 }
 
 h1 {
-  font-size: 2.5em; 
+  font-size: 3.0em; 
+  margin: 0.3em 0 0.4em;
 }
 
 h2 {
@@ -64,6 +65,14 @@ h2 {
 p {
   font-size: 1em;
   color: var(--graypurp);
+}
+
+hr {
+  border: none;
+  color: var(--lightpink);
+  background-color: var(--lightpink);
+  margin: 15px 5px;
+  height: 1px;
 }
 
 .icon-star {
@@ -93,7 +102,7 @@ main {
   box-sizing: border-box;
   border-radius: 16px;
   /* border: 1px solid black; */
-  width: min(700px, 100%);
+  width: min(600px, 100%);
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
   margin-bottom: 14px;
 }
@@ -123,6 +132,8 @@ main {
 }
 
 .open .accordion-content{
+  margin-bottom: 30px;
+
   transform: scale(1);
   transform-origin: top;
 
