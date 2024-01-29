@@ -103,7 +103,7 @@ main {
   border-radius: 16px;
   /* border: 1px solid black; */
   width: min(600px, 100%);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 36px rgba(0,0,0,0.1);
   margin-bottom: 14px;
   min-height: 0;
   /* overflow-y: scroll; */
@@ -122,10 +122,6 @@ main {
 .accordion-heading:hover{
   color: var(--purp);
   translate: -5px;
-}
-
-.open .accordion-heading {
-  color: var(--purp);
 }
 
 .close .accordion-content{
